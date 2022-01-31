@@ -9,6 +9,7 @@ namespace WriteYourFirstCSharpCode
             //Challenge1();
             //LiteralValues();
             //WorkingWithVars();
+            Challenge2();
         }
         public static void Challenge1()
         {
@@ -57,6 +58,24 @@ namespace WriteYourFirstCSharpCode
             // CS0029: Cannot implicitly convert type 'decimal' to 'string'
             // Note: We can only use the var keyword IF the variable is initialized.
             // Therefore we cannot do: `var message;` we will receive an error.
+        }
+        public static void Challenge2()
+        {
+            /**
+             * Input: Hello, Bob! You have 3 in your inbox. The temperature is 34.4 celsius.
+             * store the following values from the output in variables:
+             *     Bob
+             *     3
+             *     34.4
+             * Variables should be given names that reflect their purpose.
+             * Correct datatypes
+             * Combine variables with literal strings passed into a series of Console.Write()
+             * commands to form the input message.
+             */
+            string name = "Bob";
+            int messageCount = 3;
+            decimal temperature = 34.4M;
+            Console.WriteLine($"Hello {name}! You have {messageCount} in your inbox. The temperature is {temperature} celsius.");
         }
     }
 }
