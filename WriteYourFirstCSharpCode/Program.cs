@@ -7,7 +7,8 @@ namespace WriteYourFirstCSharpCode
         static void Main(string[] args)
         {
             //Challenge1();
-            LiteralValues();
+            //LiteralValues();
+            //WorkingWithVars();
         }
         public static void Challenge1()
         {
@@ -43,6 +44,19 @@ namespace WriteYourFirstCSharpCode
             string firstName; // assigning a variable
             firstName = "Mario"; // "setting" the variable. 
             Console.WriteLine(firstName); // "getting" the variable
+        }
+        public static void ImplicitlyTypedVars()
+        {
+            // What is implicit typing? A convenience brought to us by the compiler.
+            // We can use var to let the compiler infer its type. 
+            var message = "Hello World!";
+            Console.WriteLine(message); // => Hello World!
+            // the compiler infered I wanted a string.
+            // however if I tried to...
+            // `message = 10M` and `Console.WriteLine()` it, I would receive an error:
+            // CS0029: Cannot implicitly convert type 'decimal' to 'string'
+            // Note: We can only use the var keyword IF the variable is initialized.
+            // Therefore we cannot do: `var message;` we will receive an error.
         }
     }
 }
