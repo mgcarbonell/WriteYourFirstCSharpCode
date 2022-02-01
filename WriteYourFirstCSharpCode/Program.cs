@@ -10,8 +10,9 @@ namespace WriteYourFirstCSharpCode
             //WorkingWithVariables.Challenge2();
             //BasicStringFormatting.Challenge();
             //BasicOperationsNumbers.Challenge();
-            MethodsFromNETLib.RandomTest();
-            MethodsFromNETLib.StateVersusStateless();
+            //MethodsFromNETLib.Challenge();
+            ControlFlowIfElseElseif.GameOne();
+            ControlFlowIfElseElseif.GameOneRefined();
         }
 
     }
