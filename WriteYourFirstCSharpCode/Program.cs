@@ -19,6 +19,12 @@ namespace WriteYourFirstCSharpCode
             //BasicStringFormatting.StringInterpolation();
             //BasicStringFormatting.PuttingItAllTogether();
             //BasicStringFormatting.Challenge();
+            BasicOperationsNumbers.SimpleAddition();
+            BasicOperationsNumbers.ForceImplicitConversion();
+            BasicOperationsNumbers.WhenForcedConversionsFail(); 
+            BasicOperationsNumbers.HowToAvoidImplicitFailure();
+            BasicOperationsNumbers.MathOperations();
+            BasicOperationsNumbers.OrderOfOperations();
         }
 
     }
