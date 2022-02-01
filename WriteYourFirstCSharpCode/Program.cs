@@ -25,6 +25,9 @@ namespace WriteYourFirstCSharpCode
             BasicOperationsNumbers.HowToAvoidImplicitFailure();
             BasicOperationsNumbers.MathOperations();
             BasicOperationsNumbers.OrderOfOperations();
+            BasicOperationsNumbers.WhatAboutExponents();
+            BasicOperationsNumbers.IncrementAndDecrement();
+            BasicOperationsNumbers.Challenge();
         }
 
     }

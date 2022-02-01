@@ -62,8 +62,32 @@ namespace WriteYourFirstCSharpCode
             // PEMDAS
             int value1 = 3 + 4 * 5;
             int value2 = (3 + 4) * 5;
-            Console.WriteLine("Not using parenthesis can give us an interesting answer: " + value1);
-            Console.WriteLine("Using parens and order of operations we'll get another answer: " + value2);
+            Console.WriteLine("Not using parenthesis can give us an interesting answer => " + value1);
+            Console.WriteLine("Using parens and order of operations we'll get another answer => " + value2);
+        }
+        public static void WhatAboutExponents()
+        {
+            int num = 2;
+            Console.WriteLine($"2 raised to the 2nd power is => {Math.Pow(num, 2)}");
+            // => 4
+        }
+        public static void IncrementAndDecrement()
+        {
+            int value = 1;
+            value++;
+            Console.WriteLine("First: " + value);
+            Console.WriteLine("Second: " + value++);
+            Console.WriteLine("Third: " + value);
+            Console.WriteLine("Fourth: " + (++value));
+        }
+        public static void Challenge()
+        {
+            // Convert F to C
+            // F => C = (F - 32) * (5 / 9)
+            int fahrenheit = 94;
+            decimal decimalF = fahrenheit;
+            decimal convertFtoCelsius = (decimalF - 32m) * (5m / 9m);
+            Console.WriteLine($"The temperature is {convertFtoCelsius} Celsius.");
         }
     }
 }
