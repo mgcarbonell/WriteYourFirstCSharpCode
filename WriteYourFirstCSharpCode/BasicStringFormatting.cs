@@ -45,7 +45,9 @@ namespace WriteYourFirstCSharpCode
         public static void UnicodeEscapeChars()
         {
             // Kon'nichiwa World
-            //Console.WriteLine("\u3053\u3093\u306B\u3061\u306F World!");
+            // Console.WriteLine("\u3053\u3093\u306B\u3061\u306F World!");
+            // note will not display because the console does not support UTF-16.
+
         }
         public static void StringConcatenation()
         {
@@ -73,6 +75,7 @@ namespace WriteYourFirstCSharpCode
 
             string russianMessage = "\u041f\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u0442\u044c \u0440\u0443\u0441\u0441\u043a\u0438\u0439 \u0432\u044b\u0432\u043e\u0434";
             Console.WriteLine($"View English Output:\n\tc:\\Exercise\\{projectName}\\data.txt\n\n{russianMessage}\n\tc:\\Exercise\\{projectName}\\ru-RU\\data.txt");
+            // note will not display because the console does not support UTF-16.
         }
     }
 }
