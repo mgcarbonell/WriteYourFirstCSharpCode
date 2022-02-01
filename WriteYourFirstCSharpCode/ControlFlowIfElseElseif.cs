@@ -90,5 +90,58 @@ namespace WriteYourFirstCSharpCode
                 Console.WriteLine("You win a kitten!");
             }
         }
+
+        public static void Challenge()
+        {
+            /*
+             * You've been asked to add a feature to your company's software. The feature is intended to improve the
+             * renewal rate of subscriptions to the software. Your task is to display a renewal message when a user logs
+             * into the software system and is notified their subscription will soon end. You'll need to add a couple of
+             * decision statements to properly add branching logic to the application to satisfy the requirements.
+             * 
+             * You must use all of the variables in your code.
+             * 
+             * Rule 1: If the user's subscription will expire in 10 days or less display the message:
+             * Your subscription will expire soon. Renew now!
+             * 
+             * Rule 2. If the user's subscription will expire in five days or less, display the messages:
+             * Your subscription expires in _ days.
+             * Renew now and save 10%!
+             * 
+             * Rule 3. If the user's subscription will expire in one day, display the message:
+             * Your subscription expires within a day!
+             * Renew now and save 20%!
+             * 
+             * Rule 4. If the user's subscription has expired, display the message:
+             * Your subscription has expired.
+             * 
+             * Rule 5. If the user's subscription doesn't expire in 10 days or less, display nothing.
+             */
+            Random random = new Random();
+            int daysUntilExpiration = random.Next(12);
+            int discountPercentage = 0;
+
+            if (daysUntilExpiration < 10)
+            {
+                if (daysUntilExpiration < 5 && daysUntilExpiration > 1)
+                {
+                    discountPercentage = 10;
+                    Console.WriteLine($"Your subscription expires in {daysUntilExpiration} days.\nRenew now and save {discountPercentage}%!");
+                }
+                else if (daysUntilExpiration == 1)
+                {
+                    discountPercentage = 20;
+                    Console.WriteLine($"Your subscription expires in {daysUntilExpiration} days.\nRenew now and save {discountPercentage}%!");
+                }
+                else if (daysUntilExpiration == 0)
+                {
+                    Console.WriteLine("Your subscription has expired.");
+                }
+                else
+                {
+                    Console.WriteLine("Your subscription will end soon. Renew now!");
+                }
+            }
+        }
     }
 }

@@ -11,8 +11,7 @@ namespace WriteYourFirstCSharpCode
             //BasicStringFormatting.Challenge();
             //BasicOperationsNumbers.Challenge();
             //MethodsFromNETLib.Challenge();
-            ControlFlowIfElseElseif.GameOne();
-            ControlFlowIfElseElseif.GameOneRefined();
+            ControlFlowIfElseElseif.Challenge();
         }
 
     }
