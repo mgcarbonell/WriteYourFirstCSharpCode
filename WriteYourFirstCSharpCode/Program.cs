@@ -15,6 +15,10 @@ namespace WriteYourFirstCSharpCode
             //ArraysAndIteration.ChallengeExplanation();
             //ArraysAndIteration.ChallengeUsingForLoop();
             //ArraysAndIteration.Challenge();
+            //ReadableCode.ChallengeOriginal();
+            //ReadableCode.ChallengeRefactor();
+
+
         }
 
     }
